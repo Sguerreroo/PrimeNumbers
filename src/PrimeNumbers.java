@@ -36,7 +36,7 @@ public class PrimeNumbers {
     private static Set<Integer> selectMIntegers(int n, int m) {
         Set<Integer> selected = new HashSet<>();
         while (selected.size() != m)
-            selected.add((int) (Math.random()*n-1)+1);
+            selected.add((int) (Math.random()*(n-2))+2);
         return selected;
     }
 

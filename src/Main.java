@@ -1,10 +1,10 @@
 public class Main {
 
     public static void main(String[] args) {
-        int m = 2;
-        int trueCount = 0;
-        int primes[] = {17,31,191,607,727,524287};
-        int composites[] = {20,100,585,657,100096};
+        int m = 1;
+        int trueCount;
+        int primes[] = {17,31,191,607,727,8191};
+        int composites[] = {20,100,561,657,100096};
 
         System.out.println("Prueba números primos");
 
@@ -19,7 +19,6 @@ public class Main {
             trueCount = Main.test(composites[i], m);
             System.out.println("Acierto " + (100-trueCount) + "% para " + composites[i]);
         }
-
 
     }
 
